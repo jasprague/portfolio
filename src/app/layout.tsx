@@ -1,8 +1,19 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
+import type { Metadata } from 'next'
+import { Ubuntu } from 'next/font/google'
+
+import './globals.css'
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
+import NavBar from './components/NavBar';
+import FormModal from './components/FormModal';
+
+const ubuntu = Ubuntu({ 
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-ubuntu'
+})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -14,9 +25,13 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${ubuntu.variable} font-sans dark:bg-gray-900 dark:text-slate-300 mx-auto`}>
+        <NavBar />
+        {children}
+        </body>
     </html>
   )
 }
