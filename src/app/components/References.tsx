@@ -18,10 +18,10 @@ export default function References() {
         <section className="p-20">
         <Slider {...settings}>
             {referenceList.map(r => (
-                <>
-                    <q key={r.id}>{r.review}</q>
-                    <p className="text-right mt-10">- {r.reviewer}</p>
-                </>
+                <div key={r.id}>
+                    <q>{r.review}</q>
+                    <p key={r.id}className="text-right mt-10">- {r.reviewer}</p>
+                </div>
 
 
             ))}

@@ -1,29 +1,23 @@
 'use client'
 
 import Link from 'next/link';
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect, useContext } from 'react'
 import FormModal from './FormModal';
+import MobileNav from './MobileNav';
+import Ctx from '../contexts/ctx';
 
 export default function NavBar() {
 
     const navRef = useRef<HTMLAnchorElement>(null);
     const [isOpen, setIsOpen] = useState(false);
 
+    const {handleCloseModal, handleOpenModal, isModalOpen, setModalOpen} = useContext(Ctx)
+
     useEffect(() => {
         const navHeight = navRef.current ? navRef.current.offsetHeight : 0
     }, [])
 
-    const [isModalOpen, setModalOpen] = useState(false);
-
-    const handleOpenModal = () => {
-      setModalOpen(true);
-    };
-  
-    const handleCloseModal = () => {
-      setModalOpen(false);
-    };
-
-    return (
+    return ( 
         <nav ref={navRef} className="h-40 z-10 justify-end flex w-full scroll:fixed">
             <ul className="flex h-full hidden lg:flex items-center justify-items-center justify-end ">
             <Link className='focus:text-orange-600 flex items-center h-full hover:text-teal-500' href="/"><li className="px-10">Home</li></Link>
@@ -48,7 +42,7 @@ export default function NavBar() {
                             </svg>
                         </button>
                     </div>
-            <FormModal isOpen={isModalOpen} onClose={handleCloseModal}/>
+            <FormModal />
         </nav>
     )
 }

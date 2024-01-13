@@ -1,13 +1,14 @@
 
 import type { Metadata } from 'next'
 import { Ubuntu } from 'next/font/google'
-
 import './globals.css'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
 import NavBar from './components/NavBar';
 import FormModal from './components/FormModal';
+import { CtxProvider } from './contexts/ctxProvider';
+
 
 const ubuntu = Ubuntu({ 
   subsets: ['latin'],
@@ -29,8 +30,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${ubuntu.variable} font-sans dark:bg-gray-900 dark:text-slate-300 mx-auto`}>
+      <CtxProvider>
         <NavBar />
         {children}
+      </CtxProvider>
         </body>
     </html>
   )

@@ -7,7 +7,7 @@ export default function About() {
     return (
         <>
         <section className="items-center justify-center flex flex:1 flex-col md:flex-row bg-gradient-to-r from-teal-600 -skew-y-3 h-96 mb-40">
-        <div className="w-6/12 flex justify-center skew-y-3">
+        <div className="md:w-6/12 flex justify-center skew-y-3">
             <div className="rounded-full w-80 h-80 overflow-hidden">
             <Image src={imgOfMe} alt="Image of Me" className="h-full w-full object-cover transform-none"/>
             </div>

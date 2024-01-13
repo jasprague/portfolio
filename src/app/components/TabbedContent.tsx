@@ -1,7 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react';
 import ContentCard from './ContentCard';
-import SwipeableViews from 'react-swipeable-views'
 
 
 const TabbedContent: React.FC = () => {
@@ -35,13 +34,6 @@ useEffect(() => {
         ))}
       </div>
       <div>
-        { isMobileOrTablet && (
-            <SwipeableViews>
-                {tabs[activeTab] === 'Skills' && <ContentCard forCard={'Skills'}/>}
-                {tabs[activeTab] === 'Experience' && <ContentCard forCard={'Experience'}/>}
-                {tabs[activeTab] === 'References' && <ContentCard forCard={'References'}/>}
-            </SwipeableViews>
-        )}
             {tabs[activeTab] === 'Skills' && <ContentCard forCard={'Skills'}/>}
             {tabs[activeTab] === 'Experience' && <ContentCard forCard={'Experience'}/>}
             {tabs[activeTab] === 'References' && <ContentCard forCard={'References'}/>}     
