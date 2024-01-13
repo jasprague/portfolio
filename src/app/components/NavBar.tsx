@@ -3,7 +3,6 @@
 import Link from 'next/link';
 import { useState, useRef, useEffect, useContext } from 'react'
 import FormModal from './FormModal';
-import MobileNav from './MobileNav';
 import Ctx from '../contexts/ctx';
 
 export default function NavBar() {
