@@ -9,7 +9,6 @@ export const CtxProvider: FC<{ children: ReactNode }> = ({ children }) => {
 
     const handleOpenModal = () => {
       setModalOpen(true);
-      console.log('Ctx is working')
     };
   
     const handleCloseModal = () => {

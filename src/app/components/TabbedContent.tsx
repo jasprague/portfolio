@@ -28,7 +28,7 @@ useEffect(() => {
     <section className="w-10/12 mx-auto mb-20">
       <div className="flex w-full justify-items-center flex:1">
         {tabs.map((tab, index) => (
-          <a key={index} style={{borderCollapse: 'collapse'}}className={'p-10 w-6/12 text-center rounded-t-2xl  h-full hover:bg-teal-500 transition-all' + (index === activeTab ? ' active bg-teal-800' : '')} onClick={() => handleTabClick(index)}>
+          <a key={index} style={{borderCollapse: 'collapse'}}className={' p-2 md:p-10 w-6/12 text-center rounded-t-2xl  h-full hover:bg-teal-500 transition-all' + (index === activeTab ? ' active bg-teal-800' : '')} onClick={() => handleTabClick(index)}>
             {tab}
           </a>
         ))}

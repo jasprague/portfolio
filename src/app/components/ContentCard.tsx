@@ -12,7 +12,7 @@ export default function ContentCard({forCard='Skills'}: ContentCardProps) {
                 <aside className="flex justify-around text-center mb-20">
                     <div>
                         <h4 className="text-4xl mb-10">Technical Skills</h4>               
-                        <ul>
+                        <ul className="text-xl leading-8">
                             <li>HTML & CSS</li>
                             <li>Javascript</li>
                             <li>Typescript</li>
@@ -33,7 +33,7 @@ export default function ContentCard({forCard='Skills'}: ContentCardProps) {
                     </div>
                     <div>
                             <h4 className="text-4xl mb-10">Soft Skills</h4>               
-                            <ul>
+                            <ul className="text-xl leading-8">
                                 <li>Life Long Learner</li>
                                 <li>People Leader</li>
                                 <li>Product Management</li>
@@ -51,18 +51,18 @@ export default function ContentCard({forCard='Skills'}: ContentCardProps) {
 
             )}
             {forCard === 'Experience' && (
-                <>
-                    <aside className="mb-20">
+                <div className="text-xl leading-8 leading-8">
+                    <aside className="mb-20 ">
                         <h3 className="text-4xl mb-4">Fieldroutes, a ServiceTitan Company</h3>
-                        <h4>Position: Front End Web Developer </h4>
-                        <h4>Length of Time: 3.5 Years </h4>
-                        <p>Job Description:<br/> As a Front End Web Developer at Fieldroutes, I worked on the Development Support team. My tasks ranged greatly, from debugging our React themes to creating custom pages for Premium clients. I managed the internal development inbox, the Jira board, and also conducted many meetings to isolate issues and pain points for our implementation teams.</p>
+                        <h4><u>Position:</u> Front End Web Developer </h4>
+                        <h4><u>Length of Time:</u> 3.5 Years </h4>
+                        <p><u>Job Description:</u><br/> As a Front End Web Developer at Fieldroutes, I worked on the Development Support team. My tasks ranged greatly, from debugging our React themes to creating custom pages for Premium clients. I managed the internal development inbox, the Jira board, and also conducted many meetings to isolate issues and pain points for our implementation teams.</p>
                     </aside>
                     <aside className="mb-20">
                         <h3 className="text-4xl mb-4">Lobster Marketing</h3>
-                        <h4>Position: Support Agent</h4>
-                        <h4>Length of Time: 1.5 Years </h4>
-                        <p>Job Description:<br/> As a Support Agent at Lobster Marketing, I was responsible for a vast array of tasks including: </p>
+                        <h4><u>Position:</u> Support Agent</h4>
+                        <h4><u>Length of Time:</u> 1.5 Years </h4>
+                        <p><u>Job Description:</u><br/> As a Support Agent at Lobster Marketing, I was responsible for a vast array of tasks including: </p>
                         <ul className="mx-10">
                             <li>Managing Support Inbox</li>
                             <li>Client Onboarding</li>
@@ -74,9 +74,9 @@ export default function ContentCard({forCard='Skills'}: ContentCardProps) {
                     </aside>
                     <aside className="mb-20">
                         <h3 className="text-4xl mb-4">Governor's Restaurant</h3>
-                        <h4>Position: General Manager </h4>
-                        <h4>Length of Time: 8 Years </h4>
-                        <p>Job Description:<br/> As the General Manager of Governor's Restaurant, I was respondible for all operational and managerial duties. These included: </p>
+                        <h4><u>Position:</u> General Manager </h4>
+                        <h4><u>Length of Time:</u> 8 Years </h4>
+                        <p><u>Job Description:</u><br/> As the General Manager of Governor's Restaurant, I was respondible for all operational and managerial duties. These included: </p>
                         <ul className="mx-10">
                             <li>Scheduling</li>
                             <li>Hiring & Firing</li>
@@ -87,7 +87,7 @@ export default function ContentCard({forCard='Skills'}: ContentCardProps) {
                             <li>Conducting Safety & Team Meetings</li>
                         </ul>
                     </aside>
-                </>
+                </div>
             )}
             {forCard === "References" && (
                 <References />

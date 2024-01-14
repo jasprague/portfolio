@@ -29,7 +29,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${ubuntu.variable} font-sans dark:bg-gray-900 dark:text-slate-300 mx-auto`}>
+      <body className={`${ubuntu.variable} font-sans bg-gray-900 text-slate-300 text-2xl mx-auto`}>
       <CtxProvider>
         <NavBar />
         {children}
