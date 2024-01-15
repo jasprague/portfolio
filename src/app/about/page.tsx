@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import imgOfMe from '../../../public/image-of.me.webp'
+import imgOfMe from '../../../public/image-of-me.webp'
 import TabbedContent from '../components/TabbedContent'
 import ContentCard from '../components/ContentCard'
 

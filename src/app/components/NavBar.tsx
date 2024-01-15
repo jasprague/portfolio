@@ -31,7 +31,7 @@ export default function NavBar() {
         };
     }, []);
 
-    const navStyle = navBg ? { backgroundColor: 'rgb(17,24,39)'} : {}
+    const navStyle = navBg ? { backgroundColor: 'rgb(31,41,55)'} : {}
     return ( 
         <nav ref={navRef} style={navStyle} className="h-40 z-10 justify-between flex w-full transition fixed top-0 text-2xl">
             <div className="flex items-center gap-10 pl-10">

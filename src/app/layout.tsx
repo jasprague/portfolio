@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     {
       images: [
         {
-          url: '../public/image-of.me.webp'
+          url: '../public/image-of-me.webp'
         }
       ]
     }
