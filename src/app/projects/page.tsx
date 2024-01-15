@@ -18,7 +18,7 @@ export default function Projects() {
         {
             id: 2,
             name: "YelpCamp",
-            description: "This is a fullstack project which allows users to view campgrounds on a cluster map, as well as login functionality and full CRUD operations to create, update, edit, and delete campgrounds and campground reviews.",
+            description: "This is a fullstack project which allows users to view campgrounds on a cluster map, as well as login functionality and full CRUD operations to create, update, and delete campgrounds and campground reviews.",
             techUsed: "EJS, Bootstrap, Node.js, Express, Authentication, Geoloation Cluster Maps ",
             link: "https://github.com/jasprague/campfinder",
             imageUrl: YelpCampImg,
