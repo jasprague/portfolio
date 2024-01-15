@@ -11,8 +11,8 @@ export default function ContentCard({forCard='Skills'}: ContentCardProps) {
             {forCard === 'Skills' && (
                 <aside className="flex justify-around text-center mb-20 flex-col md:flex-row">
                     <div className="mb-10">
-                        <h4 className="text-2xl mb-10">Technical Skills</h4>               
-                        <ul className="text-lg leading-8 text-left md:text-center md:text-xl">
+                        <h4 className="text-3xl mb-10">Technical Skills</h4>               
+                        <ul className="text-xl leading-8 text-left md:text-center md:text-2xl">
                             <li>HTML & CSS</li>
                             <li>Javascript</li>
                             <li>Typescript</li>
@@ -32,8 +32,8 @@ export default function ContentCard({forCard='Skills'}: ContentCardProps) {
                         </ul>
                     </div>
                     <div>
-                            <h4 className="text-2xl mb-10">Soft Skills</h4>               
-                            <ul className="text-lg leading-8 text-left md:text-center md:text-xl">
+                            <h4 className="text-3xl mb-10">Soft Skills</h4>               
+                            <ul className="text-xl leading-8 text-left md:text-center md:text-2xl">
                                 <li>Lifelong Learner</li>
                                 <li>People Leader</li>
                                 <li>Product Management</li>
@@ -51,7 +51,7 @@ export default function ContentCard({forCard='Skills'}: ContentCardProps) {
 
             )}
             {forCard === 'Experience' && (
-                <div className="text-xl leading-8 leading-8">
+                <div className="text-xl md:text-2xl leading-8 leading-8">
                     <aside className="mb-20 ">
                         <h3 className="text-4xl mb-4">Fieldroutes, a ServiceTitan Company</h3>
                         <h4><u>Position:</u> Front End Web Developer </h4>

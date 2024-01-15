@@ -28,3 +28,7 @@ h2 {
 .hero {
   height: calc(100vh - 10rem);
 }
+
+.svg-hover:hover path {
+  fill: rgb(20 184 166);
+}

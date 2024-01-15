@@ -15,7 +15,7 @@ export default function References() {
         pauseOnHover: true
       };
     return (
-        <section className="p-5 text-xl leading-8">
+        <section className="p-5 text-xl md:text-2xl leading-8">
         <Slider {...settings}>
             {referenceList.map(r => (
                 <div className="" key={r.id}>

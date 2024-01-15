@@ -10,7 +10,7 @@ export default function Projects() {
             id: 1,
             name: "Portfolio Project",
             description: "This is my recent Portfolio Project. This project utilizes the leading edge front-end technologies, creating a robust & optimized user experience.",
-            techUsed: "React, Next.js, Typescript, Javascript, Tailwind Css, , Vercel",
+            techUsed: "React, Next.js, Typescript, Javascript, Tailwind CSS, , Vercel",
             link: "https://github.com/jasprague/portfolio",
             imageUrl: PortfolioImg,
             completed: true
@@ -19,7 +19,7 @@ export default function Projects() {
             id: 2,
             name: "YelpCamp",
             description: "This is a fullstack project which allows users to view campgrounds on a cluster map, as well as login functionality and full CRUD operations to create, update, edit, and delete campgrounds and campground reviews.",
-            techUsed: "EJS, Node.js, Express, Authentication, Geoloation Cluster Maps ",
+            techUsed: "EJS, Bootstrap, Node.js, Express, Authentication, Geoloation Cluster Maps ",
             link: "https://github.com/jasprague/campfinder",
             imageUrl: YelpCampImg,
             completed: false
@@ -37,7 +37,7 @@ export default function Projects() {
 
     return (
         <section>
-            <h1 className="text-center mt-48">Projects</h1>
+            <h1 className="text-center mt-48 mb-20">Projects</h1>
             {projectData.map(project => (
                 <AlternatingContent key={project.id} id={project.id} description={project.description} name={project.name} imageUrl={project.imageUrl} completed={project.completed} link={project.link} techUsed={project.techUsed} />
             ))}
