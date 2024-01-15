@@ -8,9 +8,9 @@ export default function Projects() {
     const projectData = [
         {
             id: 1,
-            name: "Portfolio Project",
+            name: "Portfolio",
             description: "This is my recent Portfolio Project. This project utilizes the leading edge front-end technologies, creating a robust & optimized user experience.",
-            techUsed: "React, Next.js, Typescript, Javascript, Tailwind CSS, , Vercel",
+            techUsed: "React, Next.js, Typescript, Javascript, Tailwind CSS, Vercel",
             link: "https://github.com/jasprague/portfolio",
             imageUrl: PortfolioImg,
             completed: true
