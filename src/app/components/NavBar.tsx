@@ -37,7 +37,7 @@ export default function NavBar() {
             <ul className="flex h-full hidden lg:flex items-center justify-items-center justify-end ">
             <Link className='focus:text-orange-600 flex items-center h-full hover:text-teal-500' href="/"><li className="px-10">Home</li></Link>
             <Link className='focus:text-orange-600 flex items-center h-full hover:text-teal-500' href="/about"><li className="px-10">About</li></Link>
-            <Link className='focus:text-orange-600 flex items-center h-full hover:text-teal-500' href="/work"><li className="px-10">Projects</li></Link>
+            <Link className='focus:text-orange-600 flex items-center h-full hover:text-teal-500' href="/projects"><li className="px-10">Projects</li></Link>
             <Link className='focus:text-orange-600 flex items-center h-full hover:text-teal-500' href="#" onClick={(e)=> {
                 e.preventDefault();
                 handleOpenModal();

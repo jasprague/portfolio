@@ -9,10 +9,10 @@ export default function ContentCard({forCard='Skills'}: ContentCardProps) {
         <div className="border border-teal-800 rounded-b-2xl px-10">
             <h2 className="text-5xl py-10 text-center">{forCard}</h2>
             {forCard === 'Skills' && (
-                <aside className="flex justify-around text-center mb-20">
-                    <div>
-                        <h4 className="text-4xl mb-10">Technical Skills</h4>               
-                        <ul className="text-xl leading-8">
+                <aside className="flex justify-around text-center mb-20 flex-col md:flex-row">
+                    <div className="mb-10">
+                        <h4 className="text-2xl mb-10">Technical Skills</h4>               
+                        <ul className="text-lg leading-8 text-left md:text-center md:text-xl">
                             <li>HTML & CSS</li>
                             <li>Javascript</li>
                             <li>Typescript</li>
@@ -32,9 +32,9 @@ export default function ContentCard({forCard='Skills'}: ContentCardProps) {
                         </ul>
                     </div>
                     <div>
-                            <h4 className="text-4xl mb-10">Soft Skills</h4>               
-                            <ul className="text-xl leading-8">
-                                <li>Life Long Learner</li>
+                            <h4 className="text-2xl mb-10">Soft Skills</h4>               
+                            <ul className="text-lg leading-8 text-left md:text-center md:text-xl">
+                                <li>Lifelong Learner</li>
                                 <li>People Leader</li>
                                 <li>Product Management</li>
                                 <li>Problem Solving</li>
@@ -76,7 +76,7 @@ export default function ContentCard({forCard='Skills'}: ContentCardProps) {
                         <h3 className="text-4xl mb-4">Governor's Restaurant</h3>
                         <h4><u>Position:</u> General Manager </h4>
                         <h4><u>Length of Time:</u> 8 Years </h4>
-                        <p><u>Job Description:</u><br/> As the General Manager of Governor's Restaurant, I was respondible for all operational and managerial duties. These included: </p>
+                        <p><u>Job Description:</u><br/> As the General Manager of Governor's Restaurant, I was responsible for all operational and managerial duties. These included: </p>
                         <ul className="mx-10">
                             <li>Scheduling</li>
                             <li>Hiring & Firing</li>

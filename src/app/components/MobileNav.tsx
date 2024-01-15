@@ -20,7 +20,7 @@ export default function MobileNav({isNavOpen , setIsNavOpen}:MobileNavProps) {
             <ul className="flex flex-col lg:flex items-center h-3/6 justify-items-center">
             <Link onClick={() => handleNavToggle()} className='focus:text-orange-600 flex items-center h-full hover:text-teal-500' href="/"><li className="px-10">Home</li></Link>
             <Link onClick={() => handleNavToggle()}className='focus:text-orange-600 flex items-center h-full hover:text-teal-500' href="/about"><li className="px-10">About</li></Link>
-            <Link onClick={() => handleNavToggle()}className='focus:text-orange-600 flex items-center h-full hover:text-teal-500' href="/work"><li className="px-10">Projects</li></Link>
+            <Link onClick={() => handleNavToggle()}className='focus:text-orange-600 flex items-center h-full hover:text-teal-500' href="/projects"><li className="px-10">Projects</li></Link>
             <Link className='focus:text-orange-600 flex items-center h-full hover:text-teal-500' href="#" onClick={(e)=> {
                 e.preventDefault();
                 handleNavToggle();

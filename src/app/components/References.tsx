@@ -10,7 +10,7 @@ export default function References() {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 10000,
         pauseOnHover: true
       };
@@ -22,8 +22,6 @@ export default function References() {
                     <q>{r.review}</q>
                     <p key={r.id}className="text-right mt-10">{r.reviewer}</p>
                 </div>
-
-
             ))}
         </Slider>
         </section>
