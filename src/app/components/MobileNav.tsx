@@ -16,7 +16,7 @@ export default function MobileNav({isNavOpen , setIsNavOpen}:MobileNavProps) {
     }
 
     return (
-        <nav className={`z-10 bg-gray-900 h-screen ${isNavOpen ? "flex flex-col" : "hidden"} w-full fixed justify-center gap-20 text-4xl`}>
+        <nav className={`z-10 bg-gray-900 h-screen ${isNavOpen ? "flex flex-col" : "hidden"} w-full fixed justify-center gap-10 md:gap-20 text-4xl`}>
             <ul className="flex flex-col lg:flex items-center h-3/6 justify-items-center">
             <Link onClick={() => handleNavToggle()} className='focus:text-orange-600 flex items-center h-full bg-gray-800 hover:text-teal-500 w-full justify-center' href="/"><li className="px-10">Home</li></Link>
             <Link onClick={() => handleNavToggle()}className='focus:text-orange-600 flex items-center h-full bg-gray-800 w-full justify-center hover:text-teal-500' href="/about"><li className="px-10">About</li></Link>

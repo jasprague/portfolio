@@ -40,7 +40,7 @@ export default function FormModal() {
 
   return (
     <div className={`fixed z-10 inset-0 overflow-y-auto ${!isModalOpen && 'hidden'}`}>
-      <div className="flex items-end justify-center max-h-screen py-4 px-4 pb-20 text-center sm:block sm:p-0">
+      <div className="flex items-center justify-center h-screen md:max-h-screen py-4 px-4 text-center sm:block sm:p-0">
         <div onClick={handleBackdropClick} className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
         {/* Modal Panel */}
         <span className="hidden sm:inline-block sm:align-middle sm:h-screen">&#8203;</span>
