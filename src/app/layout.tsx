@@ -19,11 +19,18 @@ const ubuntu = Ubuntu({
 export const metadata: Metadata = {
   title: 'Jason Sprague - Portfolio',
   description: 'Custom Next.js Portfolio App',
+  metadataBase: new URL('https://www.jsprague.dev'),
+  alternates: {
+    canonical: '/',
+    languages: {
+      'en-US': '/en-US',
+    },
+  },
   openGraph:
     {
       images: [
         {
-          url: '../public/image-of-me.webp'
+          url: '/image-of-me.webp'
         }
       ]
     }
