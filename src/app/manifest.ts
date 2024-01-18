@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next'
+import pwaIcon from '../../public/pwa-icon.png'
  
 export default function manifest(): MetadataRoute.Manifest {
   return {
@@ -11,7 +12,7 @@ export default function manifest(): MetadataRoute.Manifest {
     theme_color: '#fff',
     icons: [
       {
-        src: '/favicon.ico',
+        src: '/pwa-icon.png',
         sizes: 'any',
         type: 'image/x-icon',
       },
