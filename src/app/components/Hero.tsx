@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import heroImage from '../../../public/hero-stars-background-new.webp'
+import heroImage from '../../../public/hero-new.webp'
 import Button from './Button'
 
 export default function Hero() {
