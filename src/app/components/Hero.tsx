@@ -7,7 +7,7 @@ export default function Hero() {
         <section className="flex" >
         <div className="w-full h-screen relative flex justify-center items-center text-center">
             <div className=" mb-10 sm:mb-0 flex-col justify-between md:w-9/12 w-10/12">
-                <h1 className="">Hi, I'm Jason.</h1>
+                <h1 className="text-8xl mb-10">Hi, I'm Jason.</h1>
                 <h2 className="mb-10"> My passion is building performant custom web applications using the latest tech.</h2>
                 <Button text='About Me' color="cta" path="/about"/>
             </div>
