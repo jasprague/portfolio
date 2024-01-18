@@ -11,9 +11,9 @@ export default function Hero() {
                 <h2 className="mb-10"> My passion is building performant custom web applications using the latest tech.</h2>
                 <Button text='About Me' color="cta" path="/about"/>
             </div>
-            <Image src={heroImage} alt="picture of stargazer looking at a galaxy" fill quality={75} sizes="100vw" priority={true} placeholder="blur" style={{
+            <Image src={heroImage} alt="picture of stargazer looking at a galaxy" fill quality={100} sizes="100vw" priority={true} placeholder="blur" style={{
                 objectFit: 'cover',
-                objectPosition: 'center',
+                objectPosition: '35% center',
                 zIndex: '-1',
                 filter: 'brightness(45%)'
             }}/>
