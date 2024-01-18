@@ -39,13 +39,13 @@ export default function NavBar() {
                 <a target="_blank" className="svg-hover" aria-label="Linked In Link" href="https://www.linkedin.com/in/jsprague91/"><svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" fill="#fff"/></svg></a>
             </div>
             <ul className="flex h-full hidden lg:flex items-center justify-items-center justify-end ">
-            <Link className='focus:text-orange-600 flex items-center h-full hover:text-teal-500' href="/"><li className="px-10">Home</li></Link>
-            <Link className='focus:text-orange-600 flex items-center h-full hover:text-teal-500' href="/about"><li className="px-10">About</li></Link>
-            <Link className='focus:text-orange-600 flex items-center h-full hover:text-teal-500' href="/projects"><li className="px-10">Projects</li></Link>
-            <Link className='focus:text-orange-600 flex items-center h-full hover:text-teal-500' href="#" onClick={(e)=> {
+            <li className="px-10 focus:text-orange-600 flex items-center h-full hover:text-teal-500"><Link className='h-full flex items-center' href="/">Home</Link></li>
+            <li className="px-10 focus:text-orange-600 flex items-center h-full hover:text-teal-500"><Link className='h-full flex items-center' href="/about">About</Link></li>
+            <li className="px-10 focus:text-orange-600 flex items-center h-full hover:text-teal-500"><Link className='h-full flex items-center' href="/projects">Projects</Link></li>
+            <li className='focus:text-orange-600 flex items-center h-full hover:text-teal-500'><Link  href="#" onClick={(e)=> {
                 e.preventDefault();
                 handleOpenModal();
-            }}><li className="px-10">Contact</li></Link>
+            }}className="px-10 flex items-center">Contact</Link></li>
             </ul>
             <div className={`lg:hidden flex ${isMobileNavOpen ? "hidden" : ""} items-center`}>
                         <button onClick={() => setIsMobileNavOpen(!isMobileNavOpen)} className=" h-full outline-none mobile-menu-button" title="Main Menu">
