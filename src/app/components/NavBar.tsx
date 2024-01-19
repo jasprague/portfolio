@@ -41,11 +41,11 @@ export default function NavBar() {
             <ul className="flex h-full hidden lg:flex items-center justify-items-center justify-end ">
             <li className="px-10 flex items-center h-full hover:text-teal-500"><Link className='flex focus:text-orange-600 items-center' href="/">Home</Link></li>
             <li className="px-10 flex items-center h-full hover:text-teal-500"><Link className='h-full flex items-center focus:text-orange-600' href="/about">About</Link></li>
-            <li className="px-10 focus:text-orange-600 flex items-center h-full hover:text-teal-500"><Link className='h-full flex items-center focus:text-orange-600' href="/projects">Projects</Link></li>
-            <li className='focus:text-orange-600 flex items-center h-full hover:text-teal-500'><Link className="focus:text-orange-600"  href="#" onClick={(e)=> {
+            <li className="px-10 flex items-center h-full hover:text-teal-500"><Link className='h-full flex items-center focus:text-orange-600' href="/projects">Projects</Link></li>
+            <li className='focus:text-orange-600 flex items-center h-full hover:text-teal-500'><Link  href="#" onClick={(e)=> {
                 e.preventDefault();
                 handleOpenModal();
-            }}className="px-10 flex items-center">Contact</Link></li>
+            }} className="px-10 flex items-center hover:text-orange-600">Contact</Link></li>
             </ul>
             <div className={`lg:hidden flex ${isMobileNavOpen ? "hidden" : ""} items-center`}>
                         <button onClick={() => setIsMobileNavOpen(!isMobileNavOpen)} className=" h-full outline-none mobile-menu-button" title="Main Menu">
