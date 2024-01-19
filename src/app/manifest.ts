@@ -8,8 +8,8 @@ export default function manifest(): MetadataRoute.Manifest {
     description: 'My portfolio built using next.js',
     start_url: '/',
     display: 'standalone',
-    background_color: '#000000',
-    theme_color: '#000000',
+    background_color: '#14b8a5',
+    theme_color: '#14b8a5',
     icons: [
       {
         src: '/pwa-icon.png',
