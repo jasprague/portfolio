@@ -45,6 +45,9 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <head>
+        <meta name="theme-color" content="#000" />
+      </head>
       <body className={`${ubuntu.variable} font-sans bg-gray-900 text-slate-300 text-2xl mx-auto`}>
       <CtxProvider>
         <NavBar />
