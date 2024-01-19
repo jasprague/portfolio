@@ -22,6 +22,9 @@ export default function AlternatingContent({id, name, description, techUsed, lin
                             <h2 className="text-center">{name} {!completed && "(Coming Soon)"}</h2>
                             <p>{description}</p>
                             <p><u>Tech Stack:</u> {techUsed}</p>
+                            { name === "Portfolio" && 
+                                <p>This portfolio has a perfect lighthouse score in Performance, SEO, Accessibility, Best Practices, and PWA Optimization</p>
+                            }
                             <p>{completed ? <a target="_blank" className="" href={link}>{link}</a> : link}</p>
                         </div>
                         : 
@@ -36,6 +39,9 @@ export default function AlternatingContent({id, name, description, techUsed, lin
                             <h2 className="text-center">{name} {!completed && "(Coming Soon)"}</h2>
                             <p>{description}</p>
                             <p><u>Tech Stack:</u> {techUsed}</p>
+                            { name === "Portfolio" && 
+                                <i>This portfolio has a perfect lighthouse score in Performance, SEO, Accessibility, Best Practices, and PWA Optimization.</i>
+                            }
                             <p>{completed ? <a target="_blank" className="text-teal-600 hover:text-orange-600" href={link}>{link}</a> : link}</p>
                         </div>
                         

@@ -20,7 +20,6 @@ export const metadata: Metadata = {
   title: 'Jason Sprague - Portfolio',
   description: 'Custom Next.js Portfolio App',
   metadataBase: new URL('https://www.jsprague.dev'),
-  themeColor:"#000",
   alternates: {
     canonical: '/',
     languages: {
