@@ -52,7 +52,7 @@ export default function FormModal() {
               X
             </button>
           </div>
-              <div className="text-center sm:mt-0 sm:ml-4 sm:text-left w-full">
+              <div className="text-center sm:mt-0 px-6 sm:text-left w-full">
               {!isSubmitted ? (
                 <>
                   <h3 className="text-4xl leading-6 font-medium text-white text-center pt-5 pb-10" id="modal-title">Contact</h3>

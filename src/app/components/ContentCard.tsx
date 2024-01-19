@@ -17,14 +17,17 @@ export default function ContentCard({forCard='Skills'}: ContentCardProps) {
                             <li>Javascript</li>
                             <li>Typescript</li>
                             <li>React</li>
-                            <li>Gatsby</li>
                             <li>Next.js</li>
+                            <li>SCSS</li>
+                            <li>Tailwind CSS</li>
+                            <li>Responsive Design</li>
                             <li>GraphQL</li>
                             <li>Node.js</li>
                             <li>Jira</li>
                             <li>MongoDB</li>
                             <li>Express</li>
                             <li>EJS</li>
+                            <li>Gatsby</li>
                             <li>Contentful CMS</li>
                             <li>Strapi CMS</li>
                             <li>SEO</li>

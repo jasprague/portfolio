@@ -22,7 +22,7 @@ export default function AlternatingContent({id, name, description, techUsed, lin
                             <h2 className="text-center">{name} {!completed && "(Coming Soon)"}</h2>
                             <p>{description}</p>
                             <p><u>Tech Stack:</u> {techUsed}</p>
-                            <p>{completed ? <a target="_blank" href={link}>{link}</a> : link}</p>
+                            <p>{completed ? <a target="_blank" className="" href={link}>{link}</a> : link}</p>
                         </div>
                         : 
                         <Image src={imageUrl} height="700" width="700" alt="project preview"/>
@@ -36,7 +36,7 @@ export default function AlternatingContent({id, name, description, techUsed, lin
                             <h2 className="text-center">{name} {!completed && "(Coming Soon)"}</h2>
                             <p>{description}</p>
                             <p><u>Tech Stack:</u> {techUsed}</p>
-                            <p>{completed ? <a target="_blank" className="text-teal-600" href={link}>{link}</a> : link}</p>
+                            <p>{completed ? <a target="_blank" className="text-teal-600 hover:text-orange-600" href={link}>{link}</a> : link}</p>
                         </div>
                         
                     }
