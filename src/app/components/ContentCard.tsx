@@ -54,12 +54,19 @@ export default function ContentCard({forCard='Skills'}: ContentCardProps) {
 
             )}
             {forCard === 'Experience' && (
-                <div className="text-xl md:text-2xl leading-8 leading-8">
+                <div className="text-xl md:text-2xl leading-8">
                     <aside className="mb-20 ">
                         <h3 className="text-4xl mb-4">Fieldroutes, a ServiceTitan Company</h3>
                         <h4><u>Position:</u> Front End Web Developer </h4>
                         <h4><u>Length of Time:</u> 3.5 Years </h4>
-                        <p><u>Job Description:</u><br/> As a Front End Web Developer at Fieldroutes, I worked on the Development Support team. My tasks ranged greatly, from debugging our React themes to creating custom pages for Premium clients. I managed the internal development inbox, the Jira board, and also conducted many meetings to isolate issues and pain points for our implementation teams.</p>
+                        <p><u>Job Description:</u><br/> As a Front End Web Developer at Fieldroutes, I worked on the Development Support team. My tasks ranged greatly, from debugging our React themes to creating custom pages from XD design files for Premium clients. I managed the internal development inbox, the Jira board, and also conducted many meetings to isolate issues and pain points for our implementation teams.</p>
+                        <p><u>Highlights:</u><br/></p>
+                        <ul className="mx-10">
+                            <li>Reduced Jira ticket backlog items to exceed goal for each quarter.</li>
+                            <li>Reduced Developer ticket Response Time & Resolution Time by over 100%.</li>
+                            <li>Played major role in meeting hard deadline of mission-critical CMS transfer project ahead of time.</li>
+                            <li>Always delivered custom work accurately & within quoted timeframe.</li>
+                        </ul>
                     </aside>
                     <aside className="mb-20">
                         <h3 className="text-4xl mb-4">Lobster Marketing</h3>

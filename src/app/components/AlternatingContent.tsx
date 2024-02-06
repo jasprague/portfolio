@@ -1,4 +1,5 @@
 import Image, { StaticImageData }  from "next/image"
+import Button from "./Button"
 
 interface AlternatingContentProps {
     id: number,
@@ -25,7 +26,7 @@ export default function AlternatingContent({id, name, description, techUsed, lin
                             { name === "Portfolio" && 
                                 <p>This portfolio has a perfect lighthouse score in Performance, SEO, Accessibility, Best Practices, and PWA Optimization</p>
                             }
-                            <p>{completed ? <a target="_blank" className="" href={link}>{link}</a> : link}</p>
+                            { completed && <Button text='View on Github' withinContent={true} color="cta" path={link}/> }
                         </div>
                         : 
                         <Image src={imageUrl} height="700" width="700" alt="project preview"/>
@@ -42,7 +43,7 @@ export default function AlternatingContent({id, name, description, techUsed, lin
                             { name === "Portfolio" && 
                                 <i>This portfolio has a perfect lighthouse score in Performance, SEO, Accessibility, Best Practices, and PWA Optimization.</i>
                             }
-                            <p>{completed ? <a target="_blank" className="text-teal-600 hover:text-orange-600" href={link}>{link}</a> : link}</p>
+                            { completed && <Button text='View on Github' withinContent={true} color="cta" path={link}/> }
                         </div>
                         
                     }
