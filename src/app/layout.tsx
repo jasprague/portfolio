@@ -1,6 +1,6 @@
 
 import type { Metadata } from 'next'
-import { Ubuntu } from 'next/font/google'
+import { Great_Vibes, Playfair_Display } from 'next/font/google'
 import './globals.css'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -10,16 +10,22 @@ import FormModal from './components/FormModal';
 import { CtxProvider } from './contexts/ctxProvider';
 
 
-const ubuntu = Ubuntu({ 
+const cursive = Great_Vibes({ 
   subsets: ['latin'],
   weight: '400',
-  variable: '--font-ubuntu'
+  variable: '--font-greatvibes'
+})
+
+const normal = Playfair_Display({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-playfair'
 })
 
 export const metadata: Metadata = {
-  title: 'Jason Sprague - Portfolio',
-  description: 'Custom Next.js Portfolio App',
-  metadataBase: new URL('https://www.jsprague.dev'),
+  title: "Women's Return Conference",
+  description: "Women's Christian Conference in Downeast Maine",
+  metadataBase: new URL('https://www.womenreturn.com'),
   alternates: {
     canonical: '/',
     languages: {
@@ -30,7 +36,7 @@ export const metadata: Metadata = {
     {
       images: [
         {
-          url: '/image-of-me.webp'
+          url: '/return-logo.png'
         }
       ]
     }
@@ -47,7 +53,7 @@ export default function RootLayout({
       <head>
         <meta name="theme-color" content="#000" />
       </head>
-      <body className={`${ubuntu.variable} font-sans bg-gray-900 text-slate-300 text-2xl mx-auto`}>
+      <body className={`${normal.variable} font-sans text-zinc-600 text-2xl mx-auto`}>
       <CtxProvider>
         <NavBar />
         {children}

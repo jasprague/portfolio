@@ -3,9 +3,9 @@ import pwaIcon from '../../public/pwa-icon.png'
  
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Jason Sprague - Portfolio',
-    short_name: 'Jason Sprague - Portfolio',
-    description: 'My portfolio built using next.js',
+    name: "Women's Return Conference",
+    short_name: 'Return Conference',
+    description: 'Sign up for the next Return conference!',
     start_url: '/',
     display: 'standalone',
     background_color: '#000000',
