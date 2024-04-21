@@ -11,13 +11,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-greatvibes)'],
-        mono: ['var(--font-playfair)']
-      }
-      ,
-      colors: {
-        'cta': '#549F80',
-        'alt': '#54809F'
+        sans: ['var(--font-ubuntu)']
       }
     },
   },
