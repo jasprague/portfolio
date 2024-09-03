@@ -56,6 +56,19 @@ export default function ContentCard({forCard='Skills'}: ContentCardProps) {
             {forCard === 'Experience' && (
                 <div className="text-xl md:text-2xl leading-8">
                     <aside className="mb-20 ">
+                        <h3 className="text-4xl mb-4">Links Web Design</h3>
+                        <h4><u>Position:</u> Web Developer / Account Manager</h4>
+                        <h4><u>Length of Time:</u> Current </h4>
+                        <p><u>Job Description:</u><br/>at Links Web Design I am a point of contact for our client base of over 500 companies.  I also develop custom websites for new clients as well as fix bugs and add features/updates to our current websites.</p>
+                        <p><u>Highlights:</u><br/></p>
+                        <ul className="mx-10">
+                            <li>Custom Wordpress Website Development.</li>
+                            <li>Project Management for premium client projects.</li>
+                            <li>Custom HTML, CSS, JavaScript, and PHP Solutions for website updates/bug fixes</li>
+                            <li>Assisted in improving website design & development process to reduce turnaround time</li>
+                        </ul>
+                    </aside>
+                    <aside className="mb-20 ">
                         <h3 className="text-4xl mb-4">Fieldroutes, a ServiceTitan Company</h3>
                         <h4><u>Position:</u> Front End Web Developer </h4>
                         <h4><u>Length of Time:</u> 3.5 Years </h4>
